@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+</head>
+<body>
+    <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
+<h2>Edit your post</h2>
+<p>Edit username :</p>
+<input name="username" value="<%= post.username%>"type="text">
+<p> Edit bio </p>
+<textarea name="bio"><%= post.bio%></textarea><br>
+
+<button>Submit</button>
+</form>
+</body>
+</html>
